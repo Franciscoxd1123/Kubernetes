@@ -15,7 +15,7 @@ spec:
         app: pb-eureka-deployment
     spec:
       containers:
-        - name: pbeureka
+        - name: pb-eureka-service
           image: franciscoxd1123/pbeureka
           ports:
             - containerPort: 8761
@@ -33,4 +33,4 @@ spec:
     - protocol: TCP
       port: 8761
       targetPort: 8761
-  type: LoadBalancer
+  type: NodePort
