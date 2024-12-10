@@ -1,6 +1,6 @@
 spring:
   application:
-    name: PBGateway
+    name: pb-gateway-service
   cloud:
     config:
       enabled: true
