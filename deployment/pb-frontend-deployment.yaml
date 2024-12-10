@@ -15,8 +15,8 @@ spec:
         app: pb-frontend
     spec:
       containers:
-        - name: PBFrontend
-          image: franciscoxd1123/PBFrontend
+        - name: pbfrontend
+          image: franciscoxd1123/pbfrontend
           ports:
             - containerPort: 3000
 ---

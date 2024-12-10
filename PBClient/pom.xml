@@ -94,6 +94,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>PBClient</finalName>
 	</build>
-
 </project>

@@ -15,8 +15,8 @@ spec:
         app: pb-config-deployment
     spec:
       containers:
-        - name: PBConfig
-          image: franciscoxd1123/PBConfig
+        - name: pbconfig
+          image: franciscoxd1123/pbconfig
           ports:
             - containerPort: 8081
 ---

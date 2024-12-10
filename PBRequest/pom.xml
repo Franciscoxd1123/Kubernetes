@@ -94,6 +94,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>PBRequest</finalName>
 	</build>
-
 </project>

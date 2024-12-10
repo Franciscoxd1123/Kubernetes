@@ -15,8 +15,8 @@ spec:
         app: pb-evaluation-deployment
     spec:
       containers:
-        - name: PBEvaluation
-          image: franciscoxd1123/PBEvaluation
+        - name: pbevaluation
+          image: franciscoxd1123/pbevaluation
           ports:
             - containerPort: 8090
           env:

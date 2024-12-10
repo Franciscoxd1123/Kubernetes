@@ -15,8 +15,8 @@ spec:
         app: pb-request-deployment
     spec:
       containers:
-        - name: PBRequest
-          image: franciscoxd1123/PBRequest
+        - name: pbrequest
+          image: franciscoxd1123/pbrequest
           ports:
             - containerPort: 8090
           env:

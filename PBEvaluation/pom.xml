@@ -94,6 +94,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>PBEvaluation</finalName>
 	</build>
-
 </project>

@@ -15,8 +15,8 @@ spec:
         app: pb-simulation-deployment
     spec:
       containers:
-        - name: PBSimulation
-          image: franciscoxd1123/PBSimulation
+        - name: pbsimulation
+          image: franciscoxd1123/pbsimulation
           ports:
             - containerPort: 8090
           env:

@@ -15,8 +15,8 @@ spec:
         app: pb-gateway-deployment
     spec:
       containers:
-        - name: PBGateway
-          image: franciscoxd1123/PBGateway
+        - name: pbgateway
+          image: franciscoxd1123/pbgateway
           ports:
             - containerPort: 8080
 ---

@@ -15,8 +15,8 @@ spec:
         app: pb-client-deployment
     spec:
       containers:
-        - name: PBClient
-          image: franciscoxd1123/PBClient
+        - name: pbclient
+          image: franciscoxd1123/pbclient
           ports:
             - containerPort: 8090
           env:

@@ -15,8 +15,8 @@ spec:
         app: pb-eureka-deployment
     spec:
       containers:
-        - name: PBEureka
-          image: franciscoxd1123/PBEureka
+        - name: pbeureka
+          image: franciscoxd1123/pbeureka
           ports:
             - containerPort: 8761
 ---

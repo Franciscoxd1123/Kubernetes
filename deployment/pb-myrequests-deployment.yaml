@@ -15,8 +15,8 @@ spec:
         app: pb-myrequests-deployment
     spec:
       containers:
-        - name: PBMyRequests
-          image: franciscoxd1123/PBMyRequests
+        - name: pbmyrequests
+          image: franciscoxd1123/pbmyrequests
           ports:
             - containerPort: 8090
           env:
