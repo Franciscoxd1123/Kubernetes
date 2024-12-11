@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>PBEvaluation</artifactId>
+	<artifactId>pb-myrequests-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PBEvaluation</name>
+	<name>pb-myrequests-service</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -94,6 +94,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>PBEvaluation</finalName>
+		<finalName>PBMyRequests</finalName>
 	</build>
 </project>
