@@ -9,4 +9,4 @@ spring:
           uri: https://github.com/Franciscoxd1123/Kubernetes
           search-paths: config-data
   application:
-    name: pb-config-service
+    name: PBConfig

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: pb-eureka-service
+    name: PBEureka
   cloud:
     config:
       enabled: true

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: pb-client-service
+    name: PBClient
   cloud:
     config:
       enabled: true
