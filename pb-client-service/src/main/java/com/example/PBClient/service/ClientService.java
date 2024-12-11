@@ -28,14 +28,14 @@ public class ClientService {
     }
 
     public List<Request> getRequests(String clientRut){
-        List<Request> requests = restTemplate.getForObject("http://PBRequest/app/micro/requests/rut/" + clientRut, List.class);
+        List<Request> requests = restTemplate.getForObject("http://pb-request-service/app/micro/requests/rut/" + clientRut, List.class);
         return requests;
     }
 
     public Request saveRequest(String clientRut, Request request){
         request.setRut(clientRut);
         HttpEntity<Request> newRequest = new HttpEntity<Request>(request);
-        Request requestNew = restTemplate.postForObject("http://PBRequest/app/micro/requests/", newRequest, Request.class);
+        Request requestNew = restTemplate.postForObject("http://pb-request-service/app/micro/requests/", newRequest, Request.class);
         return requestNew;
     }
 }

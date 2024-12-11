@@ -15,11 +15,11 @@ public class MyRequestsService {
     RestTemplate restTemplate;
 
     public List<Request> getRequests(String clientRut){
-        List<Request> requests = restTemplate.getForObject("http://PBRequest/app/micro/requests/rut/" + clientRut, List.class);
+        List<Request> requests = restTemplate.getForObject("http://pb-request-service/app/micro/requests/rut/" + clientRut, List.class);
         return requests;
     }
 
     public Client getClientByRut(String clientRut) {
-        return restTemplate.getForObject("http://PBClient/app/micro/clients/" + clientRut, Client.class);
+        return restTemplate.getForObject("http://pb-client-service/app/micro/clients/" + clientRut, Client.class);
     }
 }

@@ -11,6 +11,6 @@ public class SimulationService {
     RestTemplate restTemplate;
 
     public int getMonthlyPayments(Request request) {
-        return restTemplate.postForObject("http://PBEvaluation/app/micro/evaluation/monthlyPayments", request, Integer.class);
+        return restTemplate.postForObject("http://pb-evaluation-service/app/micro/evaluation/monthlyPayments", request, Integer.class);
     }
 }

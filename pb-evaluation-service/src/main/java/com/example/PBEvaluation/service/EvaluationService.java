@@ -16,12 +16,12 @@ public class EvaluationService {
     RestTemplate restTemplate;
 
     public Client getClientByRut(String clientRut) {
-        return restTemplate.getForObject("http://PBClient/app/micro/clients/" + clientRut, Client.class);
+        return restTemplate.getForObject("http://pb-client-service/app/micro/clients/" + clientRut, Client.class);
     }
 
     public Optional<Request> getRequestById(Long id) {
         try {
-            Request request = restTemplate.getForObject("http://PBRequest/app/micro/requests/" + id, Request.class);
+            Request request = restTemplate.getForObject("http://pb-request-service/app/micro/requests/" + id, Request.class);
             return Optional.ofNullable(request); // Retorna un Optional
         } catch (Exception e) {
             return Optional.empty(); // Devuelve un Optional vacío en caso de error
@@ -31,7 +31,7 @@ public class EvaluationService {
     public Request saveRequest(String clientRut, Request request){
         request.setRut(clientRut);
         HttpEntity<Request> newRequest = new HttpEntity<Request>(request);
-        Request requestNew = restTemplate.postForObject("http://PBRequest/app/micro/requests/", newRequest, Request.class);
+        Request requestNew = restTemplate.postForObject("http://pb-request-service/app/micro/requests/", newRequest, Request.class);
         return requestNew;
     }
 
