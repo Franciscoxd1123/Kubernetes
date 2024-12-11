@@ -26,7 +26,7 @@ spring:
             allowedHeaders: "*"
       routes:
         - id: PBClient
-          uri: lb://PBClient
+          uri: lb://pb-client-service
           predicates:
             - Path=/app/micro/clients/**
         - id: pb-request-service
